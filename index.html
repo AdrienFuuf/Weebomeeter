@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>WeeboMeeter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+					<header id="header">
+						<h1>WeeboMeeter</h1>
+						<p>Press the button to detect fuckin weebs</p>
+						<nav>
+							<ul>
+								<button class ="weeb_button" value="weeb_clicked" height="50px" onclick="snd.play()">
+									<img class ="image_button" src="assets/css/images/button2.png" height="50%"></img>
+									<script>
+										var snd = new Audio("assets/sounds/uwu.mp3"); 
+									</script>
+								</button>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
