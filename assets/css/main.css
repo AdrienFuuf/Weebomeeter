@@ -268,7 +268,7 @@ input, select, textarea {
 		background: #348cb2 url("images/bg.jpg") bottom left;
 		height: 100%;
 		left: 0;
-		background-size: cover;
+		background-size: cover !important;
 		opacity: 1;
 		top: 0;
 	}
