@@ -18,10 +18,17 @@
 						<p>Press the button to detect fuckin weebs</p>
 						<nav>
 							<ul>
-								<button class ="weeb_button" value="weeb_clicked" height="50px" onclick="snd.play()">
+								<button class ="weeb_button" value="weeb_clicked" height="50px" onclick="play_F()">
 									<img class ="image_button" src="assets/css/images/button2.png" height="50%"></img>
 									<script>
-										var snd = new Audio("assets/sounds/uwu-sound-effect.mp3"); 
+										function play_F() {
+										var audio = document.createElement("audio");
+												audio.src = "assets/sounds/uwu-sound-effect.mp3";
+												audio.addEventListener("ended", function () {
+													document.removeChild(this);
+												}, false);
+												audio.play();   
+										}
 									</script>
 								</button>
 							</ul>
