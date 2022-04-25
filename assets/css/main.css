@@ -161,6 +161,12 @@ input, select, textarea {
     height: 250px;
 }
 
+.logo{
+	position: center;
+	width: 50%;
+    height: 50%;
+	padding-left: 5%;
+}
 /* Icon */
 
 	.icon {
